@@ -25,9 +25,9 @@
           crecer como desarrollador.
         </p>
         <nav class="hero__nav">
-          <a href="#" class="hero-link">Descargar CV</a>
-          <a href="#" class="hero-link">Enlace a GitHub</a>
-          <a href="#" class="hero-link">Hablemos</a>
+          <a href="#" class="hero__link">Descargar CV</a>
+          <a href="#" class="hero__link">Enlace a GitHub</a>
+          <a href="#" class="hero__link">Hablemos</a>
         </nav>
       </header>
       <div class="hero__photo-wrapper">
@@ -67,8 +67,12 @@
                 class="card__image"
               />
               <div class="card__logos">
-                <img src="images/logos/html5.png" alt="HTML5" />
-                <img src="images/logos/css.png" alt="CSS3" />
+                <img
+                  src="images/logos/html5.png"
+                  alt="HTML5"
+                  class="card__logo"
+                />
+                <img src="images/logos/css.png" alt="CSS3" class="card__logo" />
               </div>
             </div>
             <h3 class="card__title">Página web de una cafetería</h3>
@@ -110,17 +114,41 @@
         <li class="projects__item">
           <article class="card">
             <div class="card__image-wrapper">
-              <img src="images/Rectangle 5.png" alt="JS-project" />
+              <img
+                src="images/Rectangle 5.png"
+                alt="JS-project"
+                class="card__image"
+              />
               <div class="card__logos">
-                <img src="images/logos\js.svg" alt="JavaScript" />
-                <img src="images/logos\react.png" alt="React" />
+                <img
+                  src="images/logos/js.svg"
+                  alt="JavaScript"
+                  class="card__logo"
+                />
+                <img
+                  src="images/logos/react.png"
+                  alt="React"
+                  class="card__logo"
+                />
               </div>
             </div>
             <h3 class="card__title">Mi Proyecto</h3>
             <p class="card__description">Descripción del proyecto</p>
-            <nav class="nav__link-card">
-              <img src="images/logos\link.svg" alt="link-demo" />Demo en vivo
-              <img src="images/logos\github2.png" alt="link-github" />
+            <nav class="card__links">
+              <a href="#" class="card__link">
+                <img
+                  src="images/logos/link.svg"
+                  alt="link-demo"
+                  class="card__link-icon"
+                />Demo en vivo
+              </a>
+              <a href="#" class="card__link">
+                <img
+                  src="images/logos/github2.png"
+                  alt="link-github"
+                  class="card__link-icon"
+                />
+              </a>
             </nav>
           </article>
         </li>
@@ -139,6 +167,7 @@
               ><img
                 src="./images/Social Icons/LinkedIn/Negative.png"
                 alt="linkedin-logo"
+                class="contact__icon"
             /></a>
           </li>
           <li class="contact__item">
@@ -149,6 +178,7 @@
               ><img
                 src="./images/Social Icons/Facebook/Negative.png"
                 alt="facebook-logo"
+                class="contact__icon"
             /></a>
           </li>
           <li class="contact__item">
@@ -159,6 +189,7 @@
               ><img
                 src="./images/Social Icons/Instagram/Negative.png"
                 alt="instagram-logo"
+                class="contact__icon"
             /></a>
           </li>
           <li class="contact__item">
@@ -166,6 +197,7 @@
               ><img
                 src="./images/Social Icons/X (Twitter)/Negative.png"
                 alt="xlogo"
+                class="contact__icon"
             /></a>
           </li>
         </ul>
