@@ -45,6 +45,18 @@ body {
   max-width: 1440px;
   margin: auto;
   padding: 0 120px;
+  background:
+    radial-gradient(
+      70% 40% at 70% 20%,
+      rgba(108, 99, 255, 0.35),
+      rgba(17, 17, 17, 0) 40%
+    ),
+    radial-gradient(
+      50% 30% at 50% 90%,
+      rgba(108, 99, 255, 0.45),
+      rgba(17, 17, 17, 0) 70%
+    ),
+    #111111;
 }
 
 .hero {
@@ -159,8 +171,11 @@ body {
   justify-content: flex-start;
 }
 
-.projects__item {
+.card {
   background: #1c1c1c;
+}
+
+.projects__item {
   width: 100%;
   height: auto;
 }
@@ -199,4 +214,71 @@ body {
   font-size: 24px;
   font-weight: 700;
   font-family: "OpenSans", Arial, sans-serif;
+}
+
+.card__description {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.card__links {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #6d6dff;
+}
+
+.card__info-js {
+  display: flex;
+  flex-direction: column;
+  min-height: 365px;
+}
+
+.card__info-js .card__links {
+  margin-top: auto;
+}
+
+.contact {
+  min-height: 343px;
+  padding: 100px 0;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "ArchivoBlack";
+}
+
+.contact__text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #6d6dff;
+}
+
+.contact__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
 }
