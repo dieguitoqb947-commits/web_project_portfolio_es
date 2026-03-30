@@ -8,200 +8,215 @@
     <title>Mi Portafolio</title>
   </head>
   <body>
-    <section class="hero">
-      <header class="hero__header">
-        <h1 class="hero__title">Diego Esteban Quevedo</h1>
-        <p class="hero__role">
-          Desarrollador Full-Stack Junior | TypeScript, React, Node.js
-        </p>
-        <p class="hero__description">
-          Desarrollador web junior con experiencia práctica creando interfaces
-          limpias y responsivas con HTML, CSS, JavaScript y React, así como
-          implementando lógica básica de back-end. Ha trabajado en proyectos
-          formativos que siguen procesos reales de desarrollo, usando Git,
-          GitHub y Figma. Disfruta colaborar en equipo, mantener un código claro
-          y resolver problemas de forma estructurada. Motivado por seguir
-          aprendiendo, asumir nuevos retos y aprovechar oportunidades para
-          crecer como desarrollador.
-        </p>
-        <nav class="hero__nav">
-          <a href="#" class="hero__link">Descargar CV</a>
-          <a href="#" class="hero__link">Enlace a GitHub</a>
-          <a href="#" class="hero__link">Hablemos</a>
-        </nav>
+    <section class="main">
+      <header class="hero">
+        <div class="hero__info">
+          <h1 class="hero__title">Diego Esteban Quevedo</h1>
+          <p class="hero__role">
+            Desarrollador Full-Stack Junior | TypeScript, React, Node.js
+          </p>
+          <p class="hero__description">
+            Desarrollador web junior con experiencia práctica creando interfaces
+            limpias y responsivas con HTML, CSS, JavaScript y React, así como
+            implementando lógica básica de back-end. Ha trabajado en proyectos
+            formativos que siguen procesos reales de desarrollo, usando Git,
+            GitHub y Figma. Disfruta colaborar en equipo, mantener un código
+            claro y resolver problemas de forma estructurada. Motivado por
+            seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades
+            para crecer como desarrollador.
+          </p>
+          <nav class="hero__nav">
+            <a href="#" class="hero__link">Descargar CV</a>
+            <a href="#" class="hero__link">Enlace a GitHub</a>
+            <a href="#" class="hero__link">Hablemos</a>
+          </nav>
+        </div>
+        <div class="hero__photo-wrapper">
+          <img
+            src="images/foto_perfil.jpeg"
+            class="hero__photo"
+            alt="foto de perfil Diego"
+          />
+          <div class="hero__photo-effect"></div>
+        </div>
       </header>
-      <div class="hero__photo-wrapper">
-        <img
-          src="images/foto_perfil.jpeg"
-          class="hero__photo"
-          alt="foto de perfil Diego"
-        />
-      </div>
-    </section>
 
-    <section class="skills">
-      <h2 class="skills__title">Habilidades y herramientas</h2>
-      <div class="skills__logos">
-        <img src="images/logos/html5.png" alt="HTML5" class="skills__logo" />
-        <img src="images/logos/css.png" alt="CSS3" class="skills__logo" />
-        <img src="images/logos/js.svg" alt="JavaScript" class="skills__logo" />
-        <img src="images/logos/git.png" alt="Git" class="skills__logo" />
-        <img src="images/logos/github.png" alt="GitHub" class="skills__logo" />
-        <img
-          src="images/logos/chatgpt.png"
-          alt="ChatGPT"
-          class="skills__logo"
-        />
-      </div>
-    </section>
+      <section class="skills">
+        <h2 class="skills__title">Habilidades y herramientas</h2>
+        <div class="skills__logos">
+          <img src="images/logos/html5.png" alt="HTML5" class="skills__logo" />
+          <img src="images/logos/css.png" alt="CSS3" class="skills__logo" />
+          <img
+            src="images/logos/js.svg"
+            alt="JavaScript"
+            class="skills__logo"
+          />
+          <img src="images/logos/git.png" alt="Git" class="skills__logo" />
+          <img
+            src="images/logos/github.png"
+            alt="GitHub"
+            class="skills__logo"
+          />
+          <img
+            src="images/logos/chatgpt.png"
+            alt="ChatGPT"
+            class="skills__logo"
+          />
+        </div>
+      </section>
 
-    <section class="projects">
-      <h2 class="projects__title">Proyectos destacados</h2>
-      <ul class="projects__list">
-        <li class="projects__item">
-          <article class="card">
-            <div class="card__image-wrapper">
-              <img
-                src="images/Rectangle 3.png"
-                alt="coffee-project"
-                class="card__image"
-              />
-              <div class="card__logos">
+      <section class="projects">
+        <h2 class="projects__title">Proyectos destacados</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <article class="card">
+              <div class="card__image-wrapper">
                 <img
-                  src="images/logos/html5.png"
-                  alt="HTML5"
-                  class="card__logo"
+                  src="images/Rectangle 3.png"
+                  alt="coffee-project"
+                  class="card__image"
                 />
-                <img src="images/logos/css.png" alt="CSS3" class="card__logo" />
+                <div class="card__logos">
+                  <img
+                    src="images/logos/html5.png"
+                    alt="HTML5"
+                    class="card__logo"
+                  />
+                  <img
+                    src="images/logos/css.png"
+                    alt="CSS3"
+                    class="card__logo"
+                  />
+                </div>
               </div>
-            </div>
-            <h3 class="card__title">Página web de una cafetería</h3>
-            <p class="card__description">
-              Desarrollo de una landing page responsiva para una cafetería
-              siguiendo un brief de diseño. Incluye estructura semántica,
-              maquetación con Flexbox, creación de secciones nuevas y un
-              formulario de contacto funcional. Logro: Implementé desde cero el
-              diseño completo de la página, organicé el proyecto con buenas
-              prácticas y publiqué la versión final utilizando GitHub Pages.
-            </p>
-            <nav class="card__links">
-              <a
-                href="https://dieguitoqb947-commits.github.io/web_project_coffeeshop_es/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="card__link"
-                ><img
-                  src="images/logos/link.svg"
-                  alt="link-demo"
-                  class="card__link-icon"
-                />Demo en vivo</a
-              >
-              <a
-                href="https://github.com/dieguitoqb947/web_project_coffeeshop_es"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="card__link"
-              >
+              <h3 class="card__title">Página web de una cafetería</h3>
+              <p class="card__description">
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional. Logro: Implementé desde cero
+                el diseño completo de la página, organicé el proyecto con buenas
+                prácticas y publiqué la versión final utilizando GitHub Pages.
+              </p>
+              <nav class="card__links">
+                <a
+                  href="https://dieguitoqb947-commits.github.io/web_project_coffeeshop_es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="card__link"
+                  ><img
+                    src="images/logos/link.svg"
+                    alt="link-demo"
+                    class="card__link-icon"
+                  />Demo en vivo</a
+                >
+                <a
+                  href="https://github.com/dieguitoqb947/web_project_coffeeshop_es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="card__link"
+                >
+                  <img
+                    src="images/logos/github2.png"
+                    alt="link-github"
+                    class="card__link-icon"
+                  />
+                </a>
+              </nav>
+            </article>
+          </li>
+          <li class="projects__item">
+            <article class="card">
+              <div class="card__image-wrapper">
                 <img
-                  src="images/logos/github2.png"
-                  alt="link-github"
-                  class="card__link-icon"
+                  src="images/Rectangle 5.png"
+                  alt="JS-project"
+                  class="card__image"
                 />
-              </a>
-            </nav>
-          </article>
-        </li>
-        <li class="projects__item">
-          <article class="card">
-            <div class="card__image-wrapper">
-              <img
-                src="images/Rectangle 5.png"
-                alt="JS-project"
-                class="card__image"
-              />
-              <div class="card__logos">
-                <img
-                  src="images/logos/js.svg"
-                  alt="JavaScript"
-                  class="card__logo"
-                />
-                <img
-                  src="images/logos/react.png"
-                  alt="React"
-                  class="card__logo"
-                />
+                <div class="card__logos">
+                  <img
+                    src="images/logos/js.svg"
+                    alt="JavaScript"
+                    class="card__logo"
+                  />
+                  <img
+                    src="images/logos/react.png"
+                    alt="React"
+                    class="card__logo"
+                  />
+                </div>
               </div>
-            </div>
-            <h3 class="card__title">Mi Proyecto</h3>
-            <p class="card__description">Descripción del proyecto</p>
-            <nav class="card__links">
-              <a href="#" class="card__link">
-                <img
-                  src="images/logos/link.svg"
-                  alt="link-demo"
-                  class="card__link-icon"
-                />Demo en vivo
-              </a>
-              <a href="#" class="card__link">
-                <img
-                  src="images/logos/github2.png"
-                  alt="link-github"
-                  class="card__link-icon"
-                />
-              </a>
-            </nav>
-          </article>
-        </li>
-      </ul>
-    </section>
-    <footer class="contact">
-      <div class="contact__info">
-        <h2 class="contact__title">Contacto</h2>
-        <p class="contact__text">student@tripleten.com</p>
-        <ul class="contact__links">
-          <li class="contact__item">
-            <a
-              href="https://www.linkedin.com/in/diego-quevedo-24a549233"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="./images/Social Icons/LinkedIn/Negative.png"
-                alt="linkedin-logo"
-                class="contact__icon"
-            /></a>
-          </li>
-          <li class="contact__item">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="./images/Social Icons/Facebook/Negative.png"
-                alt="facebook-logo"
-                class="contact__icon"
-            /></a>
-          </li>
-          <li class="contact__item">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img
-                src="./images/Social Icons/Instagram/Negative.png"
-                alt="instagram-logo"
-                class="contact__icon"
-            /></a>
-          </li>
-          <li class="contact__item">
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer"
-              ><img
-                src="./images/Social Icons/X (Twitter)/Negative.png"
-                alt="xlogo"
-                class="contact__icon"
-            /></a>
+              <h3 class="card__title">Mi Proyecto</h3>
+              <p class="card__description">Descripción del proyecto</p>
+              <nav class="card__links">
+                <a href="#" class="card__link">
+                  <img
+                    src="images/logos/link.svg"
+                    alt="link-demo"
+                    class="card__link-icon"
+                  />Demo en vivo
+                </a>
+                <a href="#" class="card__link">
+                  <img
+                    src="images/logos/github2.png"
+                    alt="link-github"
+                    class="card__link-icon"
+                  />
+                </a>
+              </nav>
+            </article>
           </li>
         </ul>
-      </div>
-    </footer>
+      </section>
+      <footer class="contact">
+        <div class="contact__info">
+          <h2 class="contact__title">Contacto</h2>
+          <p class="contact__text">student@tripleten.com</p>
+          <ul class="contact__links">
+            <li class="contact__item">
+              <a
+                href="https://www.linkedin.com/in/diego-quevedo-24a549233"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./images/Social Icons/LinkedIn/Negative.png"
+                  alt="linkedin-logo"
+                  class="contact__icon"
+              /></a>
+            </li>
+            <li class="contact__item">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./images/Social Icons/Facebook/Negative.png"
+                  alt="facebook-logo"
+                  class="contact__icon"
+              /></a>
+            </li>
+            <li class="contact__item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./images/Social Icons/Instagram/Negative.png"
+                  alt="instagram-logo"
+                  class="contact__icon"
+              /></a>
+            </li>
+            <li class="contact__item">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer"
+                ><img
+                  src="./images/Social Icons/X (Twitter)/Negative.png"
+                  alt="xlogo"
+                  class="contact__icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

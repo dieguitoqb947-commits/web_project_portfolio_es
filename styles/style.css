@@ -26,12 +26,142 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1440px;
-  background-color: black;
-  color: aliceblue;
+  margin: auto;
+  padding: 0 120px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  font-family: "ArchivoBlack";
+  font-size: 72px;
+  width: 793px;
+  margin-bottom: 0;
+}
+
+.hero__role {
+  margin: 15px 0;
+  color: #ffffff80;
+  font-size: 18px;
+}
+
+.hero__description {
+  margin: 15px 0 30px 0;
+  line-height: 1.5;
+}
+
+.hero__nav {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.hero__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #14c27a 0%, #6d6dff 100%);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 5px;
+  padding-bottom: 10px;
+}
+
+.hero__photo-wrapper {
+  position: relative;
+  width: 387px;
+  height: 500px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.hero__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.skills__title {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "ArchivoBlack";
+}
+
+.skills__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skills__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.projects {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "ArchivoBlack";
+  margin: 0;
+}
+
+.projects__list {
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card__image {
+  width: 100%;
+  height: 330px;
+}
+
+.projects__item {
+  background: #1c1c1c;
 }
