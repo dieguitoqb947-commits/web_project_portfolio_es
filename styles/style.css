@@ -92,7 +92,6 @@ body {
 .hero__nav {
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 
 .hero__link {
@@ -174,12 +173,11 @@ body {
   gap: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .projects__item {
-  width: calc(50% - 10px);
+  width: 50%;
   height: auto;
 }
 
@@ -310,6 +308,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 80px;
   margin: 0;
   padding: 0;
@@ -323,4 +322,96 @@ body {
 
 .contact__icon:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 40px;
+  }
+
+  .hero__title {
+    margin: 0;
+    font-size: 58px;
+  }
+
+  .hero__description {
+  }
+
+  .hero__photo-wrapper {
+    width: 216px;
+    height: 280px;
+  }
+
+  .hero__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .projects__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .projects__item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    padding: 20px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .hero__role {
+    font-size: 16px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+  }
+
+  .hero__photo-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .skills__title {
+    font-size: 28px;
+  }
+
+  .skills__logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills__logo {
+    width: 30px;
+    height: 30px;
+  }
 }
